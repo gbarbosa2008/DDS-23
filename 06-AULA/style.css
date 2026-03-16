@@ -1,0 +1,92 @@
+body{
+    background-color: mediumpurple;
+    height: 2000px;
+}
+
+.pai{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+}
+
+.filho{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+/* TIPO ESTÁTICO */
+
+#pai-estatico{
+    background-color: aqua;
+    position: static;
+}
+
+#filho-estatico{
+    background-color: yellow;
+}
+
+/* TIPO FIXO */
+#pai-fixo{
+    background-color: white;
+    position: fixed;
+    bottom: 100px; 
+    right: 20px; 
+    z-index: -1;
+}
+#filho-fixo{
+    background-color: black;
+}
+
+/* TIPO STICKY */
+
+#pai-grudado{
+    background-color: chartreuse;
+    height: 1000px;
+    width: 1000px;
+}
+
+#filho-grudado{
+    background-color: blue;
+    position: sticky;
+    top: 30%;
+    right: 53%;
+}
+
+/* TIPO RELATIVO */
+
+#pai-relative{
+    background-color: rgb(255, 137, 65);
+}
+
+#filho-relativa{
+    background-color: #bbf343;
+    position: relative;
+    top: 20px;
+}
+
+
+/* TIPOS ABSOLUTOS */
+
+#pai-absoluto{
+    background-color: blue;
+
+}
+
+#filho-absoluto{
+    background-color: pink;
+}
+
+/* TIPOS ABSOLUTOS COM O PAI NÃO ESTÁTICO*/
+
+#pai-absoluto-relativo{
+    background-color: red;
+    position: relative;
+    top: 50px;
+}
+
+#filho-absoluto-relativo{
+    background-color: yellow;
+    position: relative;
+    top: 50px;
+}
