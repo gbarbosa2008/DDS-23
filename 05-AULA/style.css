@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+  background-color: yellow;
+}
+
+/*  Estilização por Tags */
+
+ul {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+}
+
+li {
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Sagoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização por id */
+#caixa-rosa {
+  background-color: rgb(255, 0, 179);
+  padding: 100px;
+  margin: 20px;
+}
+#caixa-roxe {
+  background-color: rgb(90, 0, 102);
+}
+
+/* Estilização por class */
+
+.caixinha{
+    background-color: white;
+    color: blue;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    /* margin: 50px; */
+    /* margin: 50px 40px 30px */
+    margin: 50px 40px 30px 20px;
+}

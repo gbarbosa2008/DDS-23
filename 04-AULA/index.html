@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulários - tipos de input</h1>
+
+    <!-- Input - Coleta informações do usúario -->
+    <!--  <input type="text"> -->
+
+    <!-- Tag que engloba os campos do formúlario -->
+    <form action="" method="">
+
+        <fieldset>
+            <legend>Dados de Login</legend>
+            <form>
+                <!-- label = texto pra guiar o input -->
+                <!-- for = diz pra qual input ele vai servir -->
+                <label>
+                    Nome:
+                    <input type="text" name="caixa-nome" id="caixa-nome" placeholder="Digite seu Nome" />
+                </label>
+
+                <!-- id = identificação única daquele elemento -->
+                <!-- name = usado pra identificar o input quando enviar os dados -->
+                <!-- <input type="text" id="caixa-nome" name="caixa-nome" /> -->
+
+                <br />
+                <br />
+                <!-- Forma 2 - input dentro do label -->
+
+                <label>
+                    Email:
+                    <input type="email" name="caixa-email" id="caixa-email" placeholder="email@email.com" />
+                </label>
+
+                <br />
+                <br />
+
+                <!-- Caixinha de senha -->
+                <label for="caixa-senha">Senha:</label>
+                <input type="password" name="caixa-senha" id="caixa-senha" placeholder="Digite sua senha" />
+
+                <br />
+                <br />
+
+                <!-- Caixinha botão  -->
+
+                <input type="submit" name="botao-login" id="botao-login" value="login" />
+
+        </fieldset>
+    </form>
+
+    <!-- Outros inputs  -->
+
+    <!-- Datas -->
+    <label for="input-data"> Data </label>
+    <input type="date" name="input-data" id="input-data" />
+    <!-- Data e hora -->
+    <input type="datetime-local" name="" id="" />
+    <!-- Só hora -->
+    <input type="time" name="" id="">
+
+    <h2> Telefone </h2>
+    <!-- Telefone -->
+    <!-- (027) 9999-9999 -->
+    <input type="tel" pattern="[0-9]{3}--[0.9]{5}--[0.9]{4}">
+    </form>
+
+    <!-- Número -->
+     <h2>Número</h2>
+     <input type="number" name="" id="" min="-50" max="100"
+     value="7">
+
+     <br><br>
+
+     <!-- Barrinha -->
+      <h2>Barra</h2>
+      <label for="">Barra top:</label>
+      0
+      <input type="range" min="0" max="100" value="20" step="20">
+      100
+
+      <!-- Texto grande -->
+       <h2>Caixa de texto grande </h2>
+       <textarea name="" id="" placeholder="Biografia...">
+       </textarea>
+
+       <!-- Cores -->
+        <h2>Seletor de cor</h2>
+        <input type="color">
+
+        <!-- Caixas de seleção -->
+         <h3>Seleção</h3>
+
+         <!-- Bolinha - usado pra selecionar uma opção dentre as várias-->
+          <!-- Deixa todos com o mesmo name, e altera o valor -->
+          <label for=""> Selecione seu Curso: </label>
+          <br>
+          <input type="radio" name="cursoEscolhido" value="TI"> T.I
+          <input type="radio" name="cursoEscolhido" value="Jogos"> Jogos
+          <input type="radio" name="cursoEscolhido" value="Design"> Design
+
+          <br><br>
+
+          <!-- Caixinha - -->
+
+           <label for=""> Selecione quais cursos redes você utiliza </label>
+           <input type="checkbox" name="rede1" value="tk"> TikTok
+           <input type="checkbox" name="rede2" value="Whatszap"> Whatszap
+           <input type="checkbox" name="rede3" value="uol"> Uol bate papo
+
+
+           <br><br>
+
+           <!-- Caixa de seleção -->
+            <label for=""> Selecione sua cidade:</label>
+            <select name="" id="caixa-cidade">
+                 <optgroup name="cd" value="cd" label="Cidade"></optgroup>
+                <option value="vm"> Vila Merlo </option>
+                <option value="cc"> Cariacica </option>
+                <option value="vt"> Vitória</option>
+                <option value="pl"> Prolar</option>
+        
+
+            <!-- Grupo de opções -->
+
+             <optgroup name="ES" value="ES" label="Espirito Santo">
+                <option value="cari">Cariacica</option>
+                <option value="cara">Carapina</option>
+                <option value="Feu">Feu Rosa</option>
+                <option value="guarapas">Guarapari</option>
+             </optgroup>
+            </select>
+
+            <!-- Reset -->
+             <input type="reset" value="Resetar">
+
+             
+</body>
+</html>
