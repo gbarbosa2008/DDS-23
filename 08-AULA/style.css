@@ -1,0 +1,177 @@
+/* IMPORTAÇÃO DE FONTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face{
+    src: url("./fonts/lanele.ttf");
+    font-family: "lanele";
+}
+
+p{
+    font-family: "lanele";
+    color: darkred;
+    font-size: 15px;
+}
+
+/* Usando a fonte importada pelo link */
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+/* Usando a fonte importada pelo link */
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/* Estiliza por tag */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+h1,
+h2 {
+  color: #1f3c88;
+}
+
+/* Seletor de classe */
+
+.bloco {
+  background-color: white;
+  border: 2px solid gray;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* PSUDO CLASSE */
+
+a {
+  color: orange;
+}
+
+/* Estiliza links que não foram visitados */
+a:link {
+  color: blue;
+}
+
+/* Estiliza links que foram visitados */
+a:visited {
+  color: purple;
+}
+
+/* ESTILIZA LINKS QUANDO PASSA O MOUSE EM CIMA */
+a:hover {
+  color: red;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* ESTILIZA LINKS QUANDO CLICADO */
+a:active {
+  color: green;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+button:active {
+  transform: scaleX(1.2);
+  transform: scaleY(0.7);
+}
+
+/* ESTILIZA O INPUT QUANDO ESTOU MEXENDO EM UM ESPECIFICO */
+input:focus {
+  outline: none;
+  border: 2px solid yellow;
+  background-color: azure;
+}
+
+/* ESTILIZA O INPUT COMO OBRIGATÓRIO */
+input:required {
+  border: 2px solid red;
+}
+
+/* ESTILIZA O INPUT INVÁLIDO */
+input:valid {
+  background-color: #ecfdf5;
+}
+
+/* ESTILIZA O INPUT INVÁLIDO */
+input:invalid {
+  background-color: #fef2f2;
+}
+
+input:checked {
+  accent-color: green;
+}
+
+input:disabled {
+  background-color: #e5e7eb;
+  color: #6b7280;
+}
+
+/* SELECIONA O PRIMEIRO FILHO */
+
+.lista-exemplo li:fist-child {
+  font-weight: bold;
+  color: green;
+}
+
+/* SELECIONA O ULTIMO FILHO */
+
+.lista-exemplo li:last-child {
+  color: red;
+}
+
+/* SELECIONA ALGUM FILHO */
+.lista-exemplo li:nth-child(3) {
+  background-color: yellow;
+}
+
+/* SELECIONA ELEMENTOS SEM CONTEÚDO */
+.caixa-vazia:empty {
+  width: 200px;
+  height: 60px;
+  background-color: #fef2f2;
+  border: red;
+}
+
+/* PSEUDO ELEMENTOS */
+
+h2::before {
+  content: "🪽";
+  color: #fef3c7;
+}
+
+/* Insere conteúdo DEPOIS de algum elemento */
+
+h2::after {
+  content: "✔️";
+  color: green;
+}
+
+/* Estiliza o texto dentro dos inputs */
+
+input::placeholder {
+  color: #6b7280;
+  font-size: italic;
+}
+
+/* Estiliza o texto selecionado pelo usúario */
+::selection {
+  background-color: yellow;
+  color: green;
+  font-size: bold;
+}
+
+.lista-maker li::marker {
+  color: red;
+  font-size: 20px;
+}

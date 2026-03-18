@@ -1,0 +1,65 @@
+body {
+  background-color: violet;
+  color: white;
+  text-align: center;
+}
+
+#bloco {
+  background-color: black;
+  display: block;
+}
+
+#quad1 {
+  background-color: red;
+}
+
+#quad2 {
+  background-color: yellow;
+  /* margin-top: 20px; */
+}
+
+#quad3 {
+  background-color: green;
+}
+
+#bloco-linha {
+  background-color: blue;
+}
+
+#linha {
+  background-color: orange;
+}
+
+#flex {
+  background-color: aqua;
+  display: flex;
+  height: 500px;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
+  /* gap: 10px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-flow: row nowrap;
+}
+
+.quad {
+  width: 200px;
+  height: 200px;
+  /* float: left; */
+  /* display: inline-block; */
+  /* display: inline; */
+  text-shadow: 2px 2px black;
+  font-size: 50px;
+}
+
+#quad1{
+    /* capacidade de aumentar */
+    flex-grow: 1; 
+
+}
+
+#quad2{
+    /* capacidade de diminuir */
+ flex-shrink: 0;
+}
