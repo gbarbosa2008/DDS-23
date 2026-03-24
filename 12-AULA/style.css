@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+/* BASE */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6fb;
+  color: black;
+  line-height: 1.6;
+}
+
+/* IMAGENS */
+img {
+  max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+  display: block; /* Remove space below images */
+}
+
+/* LINKS */
+a{
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* LAYOUT */
+.container {
+  width: 90%; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  max-width: 1200px; /* Limita a largura máxima para telas maiores */
+}
+
+/* TOPO */
+.topo {
+  background-color: #0f172a;
+  position: sticky; /* Mantém o topo fixo no topo da página */
+  top: 0; /* Define a posição do topo */
+  z-index: 2; /* Garante que o topo fique acima de outros elementos */
+  box-shadow: 0 5px 15px rgba(0, 217, 255, 0.15); /* Adiciona uma sombra para destacar o topo */
+}
+
+.navegacao{
+    display: flex; /* Define o layout como flexbox */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 20px; /* Adiciona um espaço entre os itens */
+    min-height: 85px;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5em; /* Define o tamanho da fonte para a logo */
+    font-weight: bolder; /* Deixa a logo em negrito */
+    letter-spacing: 10px; /* Adiciona espaçamento entre as letras da logo */
+}
+
+/* MENU */
+.menu {
+  display: flex; /* Define o layout como flexbox */
+  gap: 14px; /* Adiciona um espaço entre os itens do menu */
+  list-style: none; /* Remove os marcadores da lista */
+}
+
+.menu a{
+    color: white; /* Define a cor dos links do menu */
+    font-weight: 700; /* Define o peso da fonte dos links do menu */
+    padding: 10px 15px; /* Adiciona um preenchimento para os links do menu */
+    border-radius: 10px; /* Adiciona bordas arredondadas aos links do menu */
+    transition: 0.5s; /* Adiciona uma transição suave para a cor de fundo */
+}
+.menu a:hover{
+    background-color: #1e293b; /* Altera a cor de fundo dos links do menu ao passar o mouse */
+}
+
+/* SEÇÃO HERO - GRID */
+
+.hero{
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: 1fr 1fr; /* Define duas colunas de largura igual */
+    gap: 35px; /* Adiciona um espaço entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 50px 0; /* Adiciona um preenchimento vertical para a seção hero */  
+}
+
+.hero-texto h1{
+    font-size: 3em; /* Define o tamanho da fonte do título principal */
+    line-height: 1.2; /* Define a altura da linha para o título principal */
+    color: #1e293b; /* Define a cor do título principal */
+    margin: 20px 0; /* Adiciona uma margem inferior para o título principal */
+}
+
+.hero-texto p{
+    font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
+    color: #334155; /* Define a cor do parágrafo */
+    margin-bottom: 30px; /* Adiciona uma margem inferior para o parágrafo */
+}
+
+
+/* ETIQUETA - INLINE */
+
+.etiqueta-linha{
+    display: inline; /* Define o layout como inline */
+    background-color: #dbeafe; /* Define a cor de fundo da etiqueta */
+    color: #1d4ed8; /* Define a cor do texto da etiqueta */
+    padding: 5px 10px; /* Adiciona um preenchimento para a etiqueta */
+    border-radius: 10%; /* Adiciona bordas arredondadas à etiqueta */
+    margin-right: 10px; /* Adiciona uma margem direita para a etiqueta */
+    font-weight: 600; /* Define o peso da fonte da etiqueta */
+}
+
+.destaque-inline{
+    display: inline; /* Define o layout como inline */
+    background-color: #dbeafe; /* Define a cor de fundo do destaque */
+    color: #1d4ed8; /* Define a cor do texto do destaque */
+    padding: 5px 10px; /* Adiciona um preenchimento para o destaque */
+    border-radius: 10%; /* Adiciona bordas arredondadas ao destaque */
+    font-weight: 600; /* Define o peso da fonte do destaque */
+}
+
+/* BOTÕES - INLINE-BLOCK */
+
+.botao{
+    display: inline-block; /* Define o layout como inline-block */
+    padding: 10px 20px; /* Adiciona um preenchimento para os botões */
+    border-radius: 10%; /* Adiciona bordas arredondadas aos botões */
+    font-weight: 600; /* Define o peso da fonte dos botões */
+    margin-right: 10px; /* Adiciona uma margem direita para os botões */
+}
+
+.botao-primario{
+    background-color: #3b82f6; /* Define a cor de fundo do botão primário */
+    color: white; /* Define a cor do texto do botão primário */
+    transition: 0.5s; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.botao-primario:hover{
+    background-color: #2563eb; /* Altera a cor de fundo do botão primário ao passar o mouse */
+}
+
+.botao-secundario{
+    background-color: #e5e7eb; /* Define a cor de fundo do botão secundário */
+    color: #1e293b; /* Define a cor do texto do botão secundário */
+    transition: 0.5s; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.botao-secundario:hover{
+    background-color: #cbd5e1; /* Altera a cor de fundo do botão secundário ao passar o mouse */
+}
+
+/* imagem */
+
+.hero-imagem img{
+   width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+   border-radius: 20px; /* Adiciona bordas arredondadas à imagem */
+   object-fit: cover; /* Garante que a imagem mantenha suas proporções e preencha o contêiner */
+   box-shadow: 0 20px 40px black; /* Adiciona uma sombra para destacar a imagem */
+}
+
+/* FOOTER - GRID */
+
+.rodape{
+    margin-top: 50px; /* Adiciona uma margem superior para o rodapé */
+    background-color: #0f172a; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto do rodapé */
+    padding: 45px 0; /* Adiciona um preenchimento vertical para o rodapé */
+}
+
+.rodape-grid{
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Define colunas responsivas com largura mínima de 200px */
+    gap: 30px; /* Adiciona um espaço entre as colunas */
+}
+
+.rodape-grid h3{
+    font-size: 1.2em; /* Define o tamanho da fonte dos títulos do rodapé */
+    margin-bottom: 15px; /* Adiciona uma margem inferior para os títulos do rodapé */
+}
+
+.rodape-grid p{
+    color: #d1d5db; /* Define a cor do texto dos parágrafos do rodapé */
+    margin-bottom: 10px; /* Adiciona uma margem inferior para os parágrafos do rodapé */
+}
+
+
+

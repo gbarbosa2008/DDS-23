@@ -1,0 +1,63 @@
+body{
+    background-color: azure;
+    text-align: center;
+}
+
+.icones{
+    color: rgb(0, 0, 255);
+    font-size: 120px;
+    padding: 2px;
+}
+.icones2{
+    color: rgb(0, 68, 255);
+    font-size: 120px;
+    padding: 2px;
+}
+
+.icones:hover{
+    color: rgb(0, 14, 90);
+    background-color: black;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(0, 255, 85);
+}
+
+.icones2:hover{
+    color: rgb(0, 14, 90);
+    background-color: black;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(251, 255, 0);
+}
+
+.fa-plane:hover{
+    color: rgb(0, 0, 255);
+    font-size: 120px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(0, 255, 34);
+}
+
+.fa-wordpress:hover{
+    color: rgb(0, 68, 255);
+    font-size: 120px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(251, 255, 0);
+}
+
+.fa-shopify:hover{
+    color: rgb(0, 68, 255);
+    font-size: 120px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(0, 255, 34);
+}
+
+.fa-amazon:hover{
+    color: rgb(0, 68, 255);
+    font-size: 120px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgb(229, 255, 0);
+}
